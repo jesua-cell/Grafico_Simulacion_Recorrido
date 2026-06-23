@@ -1,3 +1,5 @@
+import matplotlib 
+matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 from random_walk import RandomWalk
 
@@ -7,6 +9,9 @@ rw = RandomWalk(50_000)
 rw.fill_walk()
 
 while True:
+
+    rw = RandomWalk(50_000)
+    rw.fill_walk()
 
     # Trazar los puntos
     plt.style.use('classic')
